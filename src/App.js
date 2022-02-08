@@ -19,7 +19,7 @@ import './App.css';
 
 const api = {
   key: process.env.REACT_APP_WEATHER_API,
-  base: '/http://api.openweathermap.org/data/2.5/',
+  base: 'http://api.openweathermap.org/data/2.5/',
 };
 
 function App() {
