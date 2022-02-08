@@ -118,7 +118,7 @@ function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <h1>HERMIT-CAST</h1>
+        <h1>HERMiT-CAST</h1>
         {typeof data.main == 'undefined' ? (
           <h1>Waiting for weather in your area</h1>
         ) : (
