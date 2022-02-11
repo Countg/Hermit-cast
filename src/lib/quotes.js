@@ -9,13 +9,13 @@ export const coldQuotes = [
     text: 'Why deal with the cold, when House Hunters International is ALWAYS on?',
   },
   {
-    text: 'I would rather quit my job, go off the grid, and drink my Bubly from dirty mason jars,  instead of dealing with this cold',
+    text: 'I would rather quit my job, go off the grid, and drink my bubly from dirty mason jars,  instead of dealing with this cold',
   },
   {
     text: "This winter B.S happens every year. It's time to take a stand... While sitting on the couch... For freedom!",
   },
   {
-    text: 'If you go outside in this cold,  your risk of having to do what those rugby players did in that movie, raises exponentially',
+    text: 'If you go outside in this cold,  your risk of having to do what those soccer players did in that movie, raises exponentially',
   },
   {
     text: "Do you even know what's on HGTV right now?",
