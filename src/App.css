@@ -28,7 +28,7 @@
   width: 80%;
   padding: 1em;
   min-height: 200px;
-  box-shadow: 10px 20px rgb(254, 255, 0, 0.8);
+  box-shadow: 10px 10px #282c34, 10px 10px 0px 2px yellow;
 }
 
 .temp-info h2 {
@@ -47,13 +47,30 @@
 @media (max-width: 1025px) and (min-width: 600px) {
   .temp-info {
     width: 80%;
-    box-shadow: 10px 40px rgb(254, 255, 0, 0.8);
+    box-shadow: 20px 20px #282c34, 20px 20px 0px 2px yellow;
   }
 }
 
 @media (min-width: 1026px) {
   .temp-info {
     width: 40%;
-    box-shadow: 20px 30px rgb(254, 255, 0, 0.8);
+    box-shadow: 20px 20px #282c34, 20px 20px 0px 2px yellow;
+  }
+  .info-box {
+    display: grid;
+  }
+  .info-box input {
+    height: 2.5em;
+  }
+
+  .info-box button {
+    width: 50%;
+    margin: 1em auto;
+    padding: 1em 0;
+    background-color: #09f7ea;
+    font-size: 0.5em;
+    cursor: pointer;
+    border: none;
+    transition: 1s ease-in;
   }
 }

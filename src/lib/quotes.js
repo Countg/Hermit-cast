@@ -42,7 +42,7 @@ export const hotQuotes = [
     text: 'Dude you have an oven,  why go out where over is EVERYWHERE?',
   },
   {
-    text: "You're going to the beach? Ok but first let me tell you about this documentary I watched, called Jaws",
+    text: "Oh you're going to the beach? Ok but first let me tell you about this documentary I watched, called Jaws",
   },
   {
     text: 'Why on gods green earth would you want to sweat?',
