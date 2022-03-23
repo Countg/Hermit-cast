@@ -27,6 +27,8 @@ function App() {
   const [longitude, setLongitude] = useState('');
   const [data, setData] = useState([]);
 
+  console.log(data);
+
   // random quotes
 
   let tempQuotes = [];
@@ -43,7 +45,9 @@ function App() {
   const snow = snowQuotes[snowIndx].text;
 
   if (typeof data.main === 'undefined') {
-    tempQuotes.push('');
+    tempQuotes.push(
+      'I have no idea what to say. I guess you can stick your head out a window and find out'
+    );
   } else if (
     data.weather[0].main === 'Clear' ||
     (data.weather[0].main === 'Clouds' && data.main.temp >= 5)
@@ -56,7 +60,10 @@ function App() {
     tempQuotes.push(cold);
   } else if (data.weather[0].main === 'Sunny') {
     tempQuotes.push(sun);
-  } else if (data.weather[0].main === 'Rain') {
+  } else if (
+    data.weather[0].main === 'Rain' ||
+    data.weather[0].main === 'Mist'
+  ) {
     tempQuotes.push(rain);
   } else if (data.weather[0].main === 'Snow') {
     tempQuotes.push(snow);
@@ -66,7 +73,10 @@ function App() {
   let weatherIcon = [];
   if (typeof data.main === 'undefined') {
     weatherIcon.push('');
-  } else if (data.weather[0].main === 'Rain') {
+  } else if (
+    data.weather[0].main === 'Rain' ||
+    data.weather[0].main === 'Mist'
+  ) {
     weatherIcon.push(<BsCloudRainFill size={40} color='#09f7ea' />);
   } else if (data.weather[0].main === 'Clouds') {
     weatherIcon.push(<BsCloudsFill size={40} color='#dd219e' />);
