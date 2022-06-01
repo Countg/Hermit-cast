@@ -62,6 +62,7 @@ function App() {
     tempQuotes.push(sun);
   } else if (
     data.weather[0].main === 'Rain' ||
+    data.weather[0].main === 'Thunderstorm' ||
     data.weather[0].main === 'Mist'
   ) {
     tempQuotes.push(rain);
@@ -75,6 +76,7 @@ function App() {
     weatherIcon.push('');
   } else if (
     data.weather[0].main === 'Rain' ||
+    data.weather[0].main === 'Thunderstorm' ||
     data.weather[0].main === 'Mist'
   ) {
     weatherIcon.push(<BsCloudRainFill size={40} color='#09f7ea' />);
