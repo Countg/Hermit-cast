@@ -60,7 +60,7 @@ export const hotQuotes = [
     text: "Let's agree to disagree, and agree I'm right about it being too hot for you to go outside",
   },
   {
-    text: "You wouldn't have to be going out in this heat, if you just had taken the time to figure out how to monetize your toe nail clippings",
+    text: "You wouldn't have to go out in this heat, if you just had taken the time to figure out how to monetize your toe nail clippings",
   },
 ];
 
