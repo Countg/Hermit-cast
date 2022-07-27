@@ -39,7 +39,7 @@ export const hotQuotes = [
     text: "Sure it's 'nice out'  but only sheeple like 'nice out'. Are you a sheeple?",
   },
   {
-    text: 'Dude you have an oven,  why go out where over is EVERYWHERE?',
+    text: 'Dude you have an oven,  why go out where oven is EVERYWHERE?',
   },
   {
     text: "Oh you're going to the beach? Ok but first let me tell you about this documentary I watched, called Jaws",
