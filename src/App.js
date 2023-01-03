@@ -63,7 +63,8 @@ function App() {
   } else if (
     data.weather[0].main === 'Rain' ||
     data.weather[0].main === 'Thunderstorm' ||
-    data.weather[0].main === 'Mist'
+    data.weather[0].main === 'Mist' ||
+    data.weather[0].main === 'Fog'
   ) {
     tempQuotes.push(rain);
   } else if (data.weather[0].main === 'Snow') {
