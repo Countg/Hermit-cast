@@ -78,7 +78,8 @@ function App() {
   } else if (
     data.weather[0].main === 'Rain' ||
     data.weather[0].main === 'Thunderstorm' ||
-    data.weather[0].main === 'Mist'
+    data.weather[0].main === 'Mist' ||
+    data.weather[0].main === 'Drizzle'
   ) {
     weatherIcon.push(<BsCloudRainFill size={40} color='#09f7ea' />);
   } else if (data.weather[0].main === 'Clouds') {
