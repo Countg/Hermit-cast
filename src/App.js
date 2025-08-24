@@ -6,7 +6,7 @@ import './App.css';
 
 const api = {
   key: process.env.REACT_APP_WEATHER_API,
-  base: 'http://api.weatherapi.com/v1/current.json?',
+  base: 'https://api.weatherapi.com/v1/current.json?',
 };
 
 function App() {
