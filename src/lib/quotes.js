@@ -29,6 +29,9 @@ export const coldQuotes = [
   {
     text: "You wouldn't have to be going to work in this cold. if you only had taken the time to figure out how to monetize your toe nail clippings",
   },
+  {
+    text: "It's freezing cold. Now's a great time to stay home and figure out how to blame this on late stage capitalism"
+  },
 ];
 
 export const hotQuotes = [
@@ -62,6 +65,9 @@ export const hotQuotes = [
   {
     text: "You wouldn't have to go out in this heat, if you just had taken the time to figure out how to monetize your toe nail clippings",
   },
+  {
+    text: "Most of these forest fires are caused my arson, and when I say arson I mean the sun. Don't let the sun arson you.",
+  },
 ];
 
 export const sunnyQuotes = [
@@ -80,6 +86,12 @@ export const sunnyQuotes = [
   {
     text: "You know you can still wear your aviators at home? It's not just for shirtless beach volleyball anymore",
   },
+  {
+    text: "The sun is basically an unpaid landlord charging rent on your skin. Stay inside.",
+},
+{
+  text: "UV index is a capitalist construct. Don’t let the light exploit you.", 
+},
 ];
 
 export const rainQuotes = [
@@ -97,6 +109,9 @@ export const rainQuotes = [
   },
   {
     text: "Go outside, but how do you know someone didn't pee in your rain boots?",
+  },
+  {
+    text: "The rain is unionizing against your umbrella. Don’t cross the picket line."
   },
 ];
 
@@ -116,4 +131,28 @@ export const snowQuotes = [
   {
     text: "I don't want to bring up Godwins law, but you know what they call people who like going out in the snow, right?",
   },
+  {
+    text: "White supremacy has taken over the forecast, quick get inside and call Robin DiAngelo so she can explain how its your co-workers fault",
+  },
+{
+  text: "Capitalism calls this ‘bad weather.’ We call it ‘free white noise machine.’ Stay in bed."
+
+},
 ];
+
+
+export const smogQuotes = [
+  {
+    text: "Yes you can't breathe, and sure your eyes are burning, but remember the main thing is you can stay inside and complain about pronouns on Twitter"
+  },
+  {
+    text: "Air Quality Index: dystopian vape flavor — ‘charcoal lung.’ Stay inside.",
+  },
+  {
+    text: "Asthema is conspircy theory created by big ventilator. Stay home. Don't let them win.", 
+  },
+  {
+    text: " That sepia tone outside... Is outside and not an Instagram filreter. Stay inside.",
+  },
+];
+
