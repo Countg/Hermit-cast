@@ -13,7 +13,7 @@ function App() {
 
   const [data, setData] = useState(null);
   
-console.log("Weather data:", data);
+
 
 
 
@@ -23,7 +23,7 @@ console.log("Weather data:", data);
   
   useEffect(() => {
     axios
-      .get(`${api.base}key=${api.key}&q=hamilton&aqi=no`)
+      .get(`${api.base}key=${api.key}&q=auto:ip&aqi=no`)
       .then((response) => setData(response.data))
       .catch((error) => console.error("Error fetching weather data:", error));
   }, []);
