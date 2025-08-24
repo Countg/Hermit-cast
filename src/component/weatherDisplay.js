@@ -1,0 +1,20 @@
+
+import {getWeatherFeedback} from './conditon';
+
+const WeatherDisplay = ({ data }) => {
+  const { icon: weatherIcon, quote } = getWeatherFeedback(data);
+
+
+  return (
+   <div className="temp-info">
+  <h2>
+    The current temperature in {data.location.name} is {Math.round(data.current.feelslike_c)}˚
+  </h2>
+  <div className="weather-icon">{weatherIcon}</div>
+  <h6>Why you should stay home:</h6>
+  <p>{quote}</p>
+</div>
+  );
+};
+
+export default WeatherDisplay;

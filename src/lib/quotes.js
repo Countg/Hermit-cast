@@ -152,7 +152,7 @@ export const smogQuotes = [
     text: "Asthema is conspircy theory created by big ventilator. Stay home. Don't let them win.", 
   },
   {
-    text: " That sepia tone outside... Is outside and not an Instagram filreter. Stay inside.",
+    text: " That sepia tone outside... Is outside and not an Instagram filter. Stay inside.",
   },
 ];
 
