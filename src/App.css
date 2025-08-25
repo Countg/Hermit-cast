@@ -44,11 +44,36 @@
   color: #61dafb;
 }
 
+.tagline {
+
+  
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+  width: 80%;
+  margin: 0 auto;
+}
+.tagline p {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 1em;
+  
+  
+}
+
 @media (max-width: 1025px) and (min-width: 600px) {
   .temp-info {
     width: 80%;
     box-shadow: 20px 20px #282c34, 20px 20px 0px 2px yellow;
   }
+}
+
+
+.tagline {
+
+  width: 80%;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+  width: 50%;
+  margin: 0 auto;
 }
 
 @media (min-width: 1026px) {
@@ -73,4 +98,16 @@
     border: none;
     transition: 1s ease-in;
   }
+
+
+.tagline {
+
+  width: 80%;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+  width: 50%;
+  margin: 0 auto;
 }
+}
+
+
+

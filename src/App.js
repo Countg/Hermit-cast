@@ -29,16 +29,21 @@ function App() {
   }, []);
 
   return (
-   <div className='App'>
-  <header className='App-header'>
-    <h1>HERMiT-CAST</h1>
-
-    
-      <h1>Waiting for weather in your area</h1>
-      {data ? <WeatherDisplay data={data} /> : <p>Loading...</p>}
-  </header>
-</div>
-
+    <div className='App'>
+      <header className='App-header'>
+        <h1>HERMiT-CAST</h1>
+        <div className='tagline'>
+          <p>
+            This app uses the forecast to help you avoid being productive.
+          </p>
+          <span style={{color:'white', fontSize: '0.5em', display: 'block', marginTop: '0.5em' }}>
+            (If you suddenly feel existential anxiety, consult a physician)
+          </span>
+        </div>
+        <h2>Waiting for weather in your area</h2>
+        {data ? <WeatherDisplay data={data} /> : <p>Loading...</p>}
+      </header>
+    </div>
   );
 }
 
