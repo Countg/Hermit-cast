@@ -40,13 +40,21 @@
   line-height: 0.2px;
 }
 
+.temp-info p {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  color: #ff6719;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+ }
+
+
 .App-link {
   color: #61dafb;
 }
 
 .tagline {
-
-  
   text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
   width: 80%;
   margin: 0 auto;
@@ -58,6 +66,39 @@
   font-size: 1em;
   
   
+}
+
+.weather-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centers horizontally */
+  gap: 0.5em;
+}
+
+.weather-icon span {
+  font-size: 1em;
+  color: black;
+ 
+  margin-bottom: 0;
+}
+.loading-container {
+  margin: 1em 0;
+ color: rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  
+/* Responsive: stack vertically on small screens */
+@media (max-width: 600px) {
+  .weather-icon {
+    flex-direction: column;
+    gap: 0.2em;
+    justify-content: center; /* keep centered on small screens */
+    align-items: center;
+  }
 }
 
 .spinner {
@@ -75,8 +116,8 @@
   left: 0;
   width: 100%;  /* match parent */
   height: 100%;
-  border: 5px solid #fff;
-  border-top: 5px solid #ff6719; /* accent */
+  border: 3px solid #fff;
+  border-top: 3px solid #ff6719; /* accent */
   border-radius: 50%;
   animation: spin 1.5s linear infinite;
 }
@@ -87,6 +128,7 @@
   border-radius: 50%;
   display: block;
   object-fit: cover;
+  animation: spin 3s linear infinite  reverse;
 }
 
 @keyframes spin {

@@ -57,14 +57,18 @@ function App() {
           <p>
            A productivity app, that uses your local forcast to help you avoid productivity.
           </p>
-          <span style={{color:'orange', fontSize: '0.5em', display: 'block', marginTop: '0.5em' }}>
+          <span style={{color:'#ff6719', fontSize: '0.5em', display: 'block', marginTop: '0.5em', marginBottom: '1.5em'}}>
            Warning: May cause existential anxiety.
           </span>
         </div>
-        <h2>Waiting for weather in your area</h2>
+       
        {data ? (
   <WeatherDisplay data={data}/>
 ) : (
+  <div className="loading-container">
+ 
+    <h2>Waiting for weather in your area</h2>  
+  
   <div className="loading">
     <div className="spinner">
       <div className="spinner-ring"></div>
@@ -73,8 +77,9 @@ function App() {
         
         className="circle-img"
         alt="Loading..."
-      />
+      />        
     </div>
+  </div>
   </div>
 )}
 
