@@ -62,7 +62,22 @@ function App() {
           </span>
         </div>
         <h2>Waiting for weather in your area</h2>
-        {data ? <WeatherDisplay data={data} /> : <p>Loading...</p>}
+       {data ? (
+  <WeatherDisplay data={data}/>
+) : (
+  <div className="loading">
+    <div className="spinner">
+      <div className="spinner-ring"></div>
+      <img
+        src="/images/gavinHatSerious.png"
+        
+        className="circle-img"
+        alt="Loading..."
+      />
+    </div>
+  </div>
+)}
+
       </header>
     </div>
   );

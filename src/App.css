@@ -60,6 +60,46 @@
   
 }
 
+.spinner {
+  position: relative;
+  width: clamp(120px, 40vw, 220px); /* scales between 120px and 220px */
+  height: clamp(120px, 40vw, 220px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;  /* match parent */
+  height: 100%;
+  border: 5px solid #fff;
+  border-top: 5px solid #ff6719; /* accent */
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+}
+
+.circle-img {
+  width: 90%;   /* slightly smaller than parent */
+  height: 90%;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
 @media (max-width: 1025px) and (min-width: 600px) {
   .temp-info {
     width: 80%;
