@@ -22,11 +22,32 @@ function App() {
 
   
   useEffect(() => {
+    if("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        const { latitude, longitude } = position.coords;  
+    axios
+      .get(`${api.base}key=${api.key}&q=${latitude},${longitude}&aqi=no`)
+      .then((response) => setData(response.data))
+      .catch((error) => console.error("Error fetching weather data:", error));
+  }, 
+  (error) => {
+    console.error("Error getting location:", error);
+    // Fallback to a default location if geolocation fails
+     fetchByIPFallback();
+      }
+      );
+    }
+    else {
+         fetchByIPFallback();
+      }
+  function fetchByIPFallback() {
     axios
       .get(`${api.base}key=${api.key}&q=auto:ip&aqi=no`)
       .then((response) => setData(response.data))
       .catch((error) => console.error("Error fetching weather data:", error));
-  }, []);
+  }
+  },
+  [ api.base, api.key ]);
 
   return (
     <div className='App'>
@@ -34,10 +55,10 @@ function App() {
         <h1>HERMiT-CAST</h1>
         <div className='tagline'>
           <p>
-            This app uses the forecast to help you avoid being productive.
+           A productivity app, that uses your local forcast to help you avoid productivity.
           </p>
-          <span style={{color:'white', fontSize: '0.5em', display: 'block', marginTop: '0.5em' }}>
-            (If you suddenly feel existential anxiety, consult a physician)
+          <span style={{color:'orange', fontSize: '0.5em', display: 'block', marginTop: '0.5em' }}>
+           Warning: May cause existential anxiety.
           </span>
         </div>
         <h2>Waiting for weather in your area</h2>
